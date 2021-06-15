@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				echo "Compiling"
 				bat """ javac MyDate.java """
-				bat """ java MyDate"""
+				
 				}
 			}
 			
@@ -14,7 +14,7 @@ pipeline {
 			steps {
 				echo "Running"
 				bat """ javac MyDate.java """
-				bat """ java MyDate"""
+			
 				
 				}
 			}
