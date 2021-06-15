@@ -6,13 +6,16 @@ pipeline {
 			steps {
 				echo "Compiling"
 				bat """ javac MyDate.java """
+				bat """ java MyDate"""
 				}
 			}
 			
 		stage ("run") {
 			steps {
 				echo "Running"
+				bat """ javac MyDate.java """
 				bat """ java MyDate"""
+				
 				}
 			}
 			
